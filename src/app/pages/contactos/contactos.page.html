@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>contactos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+          </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<form #formulario>
+  <ion-row>
+
+    <ion-col>
+    <ion-item>
+    
+      <ion-label floating></ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    
+    </ion-col>
+    
+    </ion-row>
+<ion-row>
+
+<ion-col>
+<ion-item>
+
+  <ion-label floating>Correo Electronico: </ion-label>
+  <ion-input type="email" required  name="correo"  ngModel></ion-input>
+</ion-item>
+
+</ion-col>
+
+</ion-row>
+<ion-row>
+
+  <ion-col>
+  <ion-item>
+  
+    <ion-label floating>Nombre: </ion-label>
+    <ion-input type="Nombre" required  name="nombre"  ngModel></ion-input>
+  </ion-item>
+  
+  </ion-col>
+  
+  </ion-row>
+  <ion-row>
+
+    <ion-col>
+    <ion-item>
+    
+      <ion-label floating>Numero de Telefono: </ion-label>
+      <ion-input type="Telefono" required  name="telefono"  ngModel></ion-input>
+    </ion-item>
+    
+    </ion-col>
+    
+    </ion-row>
+    <ion-row>
+
+      <ion-col>
+      <ion-item>
+      
+        <ion-label floating>Direccion: </ion-label>
+        <ion-input type="Direccion" required  name="direccion"  ngModel></ion-input>
+      </ion-item>
+      
+      </ion-col>
+      
+      </ion-row>
+      <ion-row>
+
+        <ion-col>
+        <ion-item>
+        
+          <ion-label floating>Asunto: </ion-label>
+          <ion-input type="Asunto" required  name="correo"  ngModel></ion-input>
+          
+        </ion-item>
+        
+        </ion-col>
+        
+        </ion-row>
+
+
+
+        <ion-row>
+
+          <ion-col>
+          
+          
+            <ion-button ion-button block color="primary" (click)="btnclicked()">ENVIAR INFORMACION</ion-button>
+            
+         
+          
+          </ion-col>
+          
+          </ion-row>
+
+</form>
+
+
+
+</ion-content>
